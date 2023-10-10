@@ -5,6 +5,14 @@
     src: url("fonts/OpenSans-Regular.woff2") format("woff2");
     font-display: swap;
   }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/OpenSans-SemiBold.woff2") format("woff2");
+    font-display: swap;
+  }
   
   @font-face {
     font-family: "Open Sans";
@@ -50,7 +58,7 @@ img {
 
 .wrapper {
     margin: 0 auto;
-    width: 95%;
+    width: 295px;
     max-width: 1170px;
 }
 
@@ -58,5 +66,80 @@ img {
 /* header */
 
 .header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #FFFFFF;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
+
+.header__logo {
+  margin-bottom: 8px;
+}
+
+.header__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  margin-right: 29px;
+  width: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* .header__button {
+  width: 32px;
+  height: 3px;
+}
+
+.header__button::before {
+  width: 100%;
+  height: 3px;
+}
+
+.header__button::after {
+  width: 24px;
+  height: 3px;
+} */
+
+/* navigation */
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.navigation__text {
+  margin: 0;
+}
+
+/* navigation-services */
+
+.navigation-services__item {
+  margin-bottom: 15px;
+}
+
+.navigation-services__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
