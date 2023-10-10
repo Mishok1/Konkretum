@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/OpenSans-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/OpenSans-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  .page {
+    height: 100%;
+  }
+  
+  .page__body {
+    background-color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2B2B2B;
+    margin: 0;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1170px;
+}
+
+
+/* header */
+
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
