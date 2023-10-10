@@ -60,3 +60,69 @@ img {
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
+
+
+/* services */
+
+.services{
+  margin-bottom: 50px;
+}
+
+/* services-header */
+.services__header__wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+.services__header{
+margin: 0;
+font-size: 1.5rem;
+font-weight: 700;
+max-width: 45%;
+}
+
+.services__decor-line{
+width: 100%;
+min-width: 45%;
+height: 1px;
+background-color: #2B2B2B80;
+}
+
+/* services-list */
+
+.services__list{
+list-style: none;
+padding: 0;
+width: 90%;
+margin: 0 auto;
+}
+
+.services__item{
+  margin-bottom: 25px;
+}
+
+.services__image{
+width: 100%;
+object-fit: cover;
+object-position: center;
+aspect-ratio: 1/1;
+margin-bottom: 10px;
+-webkit-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.23);
+-moz-box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.23);
+box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.23);
+}
+
+.services__name,
+.services__price{
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.services__price{
+  margin: 0;
+}
