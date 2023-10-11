@@ -435,6 +435,16 @@ img {
   gap: 15px;
 }
 
+.address__wrapper{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navigation__address{
+  font-size: 16px;
+}
+
 /* services */
 
 .services {
@@ -739,6 +749,10 @@ img {
   line-height: 22px;
   background-color: #535353;
   color: #FFFFFF;
+  
+}
+
+.footer__wrapper{
   padding: 30px 0;
 }
 
@@ -769,6 +783,104 @@ img {
 .requisites__item:not(:last-child) {
   margin-bottom: 20px;
 }
+
+/* footer navigation */
+
+.footer__navigation{
+  z-index: 3;
+}
+
+.footer__bg__decor{
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/Frame.svg);
+  background-position: -50px -50px;
+}
+
+.footer__bg__decor__filter{
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(66,66,66,1) 57%);
+} 
+
+.footer__navigation__list{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.footer__navigation__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer__navigation__item:first-child .navigation__link {
+  font-weight: 700;
+}
+
+.footer__navigation__link:hover,
+.footer__navigation__link:focus {
+  opacity: .8;
+}
+
+.footer__navigation__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.footer__navigation__text {
+  margin: 0;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.footer__navigation__text:hover,
+.footer__navigation__text:focus {
+  opacity: .8;
+}
+
+.footer__navigation__text::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 18px;
+  background: url("images/right-row.svg") no-repeat center;
+  background-size: 100%;
+  transform: rotate(90deg);
+}
+
+.footer__navigation__services-list {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 14px;
+  font: inherit;
+  display: none;
+}
+
+.footer__navigation-services__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.footer__navigation-services__link:hover,
+.footer__navigation-services__link:focus {
+  opacity: .8;
+}
+
 
 
 
@@ -957,3 +1069,5 @@ img {
   font-weight: 400;
   line-height: 23px;
 }
+
+
