@@ -22,6 +22,14 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Poppins-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -487,7 +495,9 @@ box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.23);
 
 /* contacts */
 
-/* .contacts {} */
+.contacts {
+  padding: 40px 0;
+}
 
 .contacts__title {
   margin: 0;
@@ -502,8 +512,11 @@ box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.23);
 }
 
 .contacts__label {
+  font-size: 16px;
+  line-height: 20px;
   display: flex;
   flex-direction: column;
+  
 }
 
 .contacts__label:not(:last-of-type) {
@@ -526,9 +539,181 @@ box-shadow: 5px 5px 14px 0px rgba(0,0,0,0.23);
 }
 
 .contacts__submit-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
   margin-top: 30px;
+  padding: 11px;
+  width: 100%;
+  background-color: #979797;
+  border: none;
+  box-shadow: 0px 4px 9px 1px #00000026;
+  border-radius: 5px;
+  color: #FFFFFF;
 }
 
+/* advantages */
+
+.advantages {
+  padding: 50px 0;
+}
+
+.advantages__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 20px;
+}
+
+/* about */
+
+.about {
+  padding: 50px 0;
+  background-color: #535353;
+  color: #FFFFFF;
+}
+
+.about__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.about__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;  
+}
+
+.about__description:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.about__button {
+  margin-top: 20px;
+  width: 252px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  padding: 11px;
+  background-color: #979797;
+  border: none;
+  box-shadow: 0px 4px 9px 1px #00000026;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+/* slider-services */
+
+.slider-services {
+  padding: 50px 0;
+}
+
+.slider-services__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+/* reviews */
+
+.reviews {
+  padding: 0 0 50px 0;
+}
+
+.reviews__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.reviews__button {
+  margin-top: 30px;
+  width: 252px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  padding: 11px;
+  background-color: #979797;
+  border: none;
+  box-shadow: 0px 4px 9px 1px #00000026;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+/* review-card */
+
+.review-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 24px;
+  row-gap: 18px;
+  color: #333333;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 20px;
+  border: 1px solid #2B2B2B;
+  border-radius: 10px;
+}
+
+.review-card__title {
+  grid-column: 1 / 2;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.review-card__title::after {
+  content: "";
+}
+
+.review-card__rating {
+  grid-column: 2 / 3;
+  justify-self: flex-start;
+  display: flex;
+}
+
+.review-card__description {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  margin: 0;
+}
+
+.review-card__data {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #9D9D9D;
+}
+
+/* map */
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  top: calc(100% - 80px);
+  right: 41px;
+  background-color: #2B2B2B;
+  border-radius: 50%;
+}
 
 /* footer */
 
