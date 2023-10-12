@@ -729,16 +729,28 @@ img {
   position: relative;
 }
 
-.map__wrapper::before {
-  content: "";
-  position: absolute;
+.map__link {
+  position: relative;
   display: block;
   width: 60px;
   height: 60px;
-  top: calc(100% - 80px);
-  right: 41px;
+  top: -80px;
+  right: -244px;
   background-color: #2B2B2B;
   border-radius: 50%;
+}
+
+.map__link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 23px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("images/arrow-up.svg") no-repeat center;
+  background-size: auto;
 }
 
 /* footer */
@@ -1068,4 +1080,110 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+}
+
+/* prices page  */
+
+.prices__table {
+  margin-bottom: 30px;
+}
+
+.table { 
+  border: 1px solid #2B2B2B;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: 10px;
+  border-spacing: 0px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.table__head {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-collapse: separate;
+}
+
+.table__row {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+
+}
+
+.table__header {
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #2B2B2B;
+  padding: 20px;
+}
+
+.table__cell {
+  padding: 9px 10px 8px 10px;
+  border-left: 1px solid #2B2B2B;
+  border-top: 1px solid #2B2B2B;
+  text-align: center;
+}
+
+/* .table__row:not(:last-of-type) .table__cell {
+
+} */
+
+.padding-left103 {
+  padding-left: 103px;
+  text-align-last: left;
+}
+
+.padding20 {
+  padding: 20px 15px;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.table__row:last-of-type .table__cell {
+  text-align: center;
+}
+
+.table__head:first-child .table__row:first-child .table__header:first-child, .table__body:first-child .table__row:first-child .table__cell:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.table__head:last-child .table__row:last-child .table__header:first-child, .table__body:last-child .table__row:last-child .table__cell:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+
+.table__head .table__row:nth-child(2) .table__header {
+  border-top: 1px solid #2B2B2B;
+}
+
+.prices__image {
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.prices__list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.prices__item {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px 11px;
+}
+
+.prices__item:not(:last-child) {
+  margin-bottom: 30px;
 }
