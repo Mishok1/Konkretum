@@ -1177,23 +1177,6 @@ img {
   text-align: center;
 }
 
-/* .table__row:not(:last-of-type) .table__cell {
-
-} */
-
-.padding-left103 {
-  padding-left: 103px;
-  text-align-last: left;
-}
-
-.padding20 {
-  padding: 20px 15px;
-}
-
-.text-align-left {
-  text-align: left;
-}
-
 .table__row:last-of-type .table__cell {
   text-align: center;
 }
@@ -1235,3 +1218,119 @@ img {
 .prices__item:not(:last-child) {
   margin-bottom: 30px;
 }
+
+
+/* table-desktop */
+
+.table-desktop { 
+  border: 1px solid #2B2B2B;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: 10px;
+  border-spacing: 0px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.table-desktop__head {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-collapse: separate;
+}
+
+.table-desktop__row {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+
+}
+
+.table-desktop__header {
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #2B2B2B;
+  padding: 20px;
+}
+
+.table-desktop__cell {
+  padding: 9px 10px 8px 10px;
+  border-left: 1px solid #2B2B2B;
+  border-top: 1px solid #2B2B2B;
+  text-align: center;
+}
+
+.table__row:last-of-type .table__cell {
+  text-align: center;
+}
+
+.table__head:first-child .table__row:first-child .table__header:first-child, .table__body:first-child .table__row:first-child .table__cell:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.table__head:last-child .table__row:last-child .table__header:first-child, .table__body:last-child .table__row:last-child .table__cell:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+
+.table__head .table__row:nth-child(2) .table__header {
+  border-top: 1px solid #2B2B2B;
+}
+
+.border-top {
+  border-top: 1px solid #2B2B2B;
+}
+
+.text-align-right {
+  text-align: right;
+} 
+
+.padding-left70 {
+  padding-left: 70px;
+}
+
+.padding-left103 {
+  padding-left: 103px;
+  text-align: left;
+}
+
+.padding20 {
+  padding: 20px 15px;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+@media (min-width: 1250px) {
+  .table {
+    display: none;
+  }
+
+  .prices__list {
+    display: none;
+  }
+
+  .table-desktop {
+    display: block;
+  }
+  
+  }
+
+@media (max-width: 1250px) {
+  .table {
+    display: block;
+  }
+
+  .prices__list {
+    display: block;
+  }
+
+  .table-desktop {
+    display: none;
+  }
+  
+  }
