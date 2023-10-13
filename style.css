@@ -685,7 +685,7 @@ img {
 /* reviews */
 
 .reviews {
-  padding: 0 0 50px 0;
+  padding: 70px 0 50px 0;
 }
 
 .reviews__title {
@@ -697,11 +697,14 @@ img {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 30px;
 }
 
-.reviews__item:not(:last-of-type) {
+/* .reviews__item:not(:last-of-type) {
   margin-bottom: 20px;
-}
+} */
 
 .reviews__button {
   margin-top: 30px;
@@ -717,6 +720,114 @@ img {
   border-radius: 5px;
   color: #FFFFFF;
 }
+
+.review-form__subtitle,
+.review-form__form,
+.reviews__image {
+  margin: 0 auto;
+}
+
+.review-form__form,
+.review-form__subtitle {
+  max-width: 500px;
+}
+
+.review-form__label {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.review-form__label:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-form__input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000000;
+  padding: 11px 15px;
+  border: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+/* .review-form__input type=[checkbox] {
+  width: 30px;
+  height: 30px;
+} */
+
+
+
+
+.review-form__input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000000;
+}
+
+.review-form__textarea {
+  height: 180px;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.reviews__image {
+  border-radius: 10px;
+  /* object-fit: contain; */
+}
+
+/* @media (min-width: 1250px) {
+  .reviews {
+    padding-top: 100px;
+  }
+  
+  .reviews__list {
+    grid-template-columns: auto auto;
+    column-gap: 60px;
+  }
+
+  .review-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+  }
+
+  .review-form__form {
+    max-width: 500px;
+  }
+
+  .review-form__subtitle {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+  }
+
+  .review-form__form {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .reviews__image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-self: center;
+  }
+
+  } */
+
 
 /* review-card */
 
@@ -799,6 +910,26 @@ img {
   transform: translate(-50%, -50%);
   background: url("images/arrow-up.svg") no-repeat center;
   background-size: auto;
+}
+
+@media (min-width: 1250px) {
+  .map__image--mobile {
+    display: none;
+  }
+
+  .map__image--desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 1250px) {
+  .map__image--mobile {
+    display: block;
+  }
+
+  .map__image--desktop {
+    display: none;
+  }
 }
 
 /* footer */
@@ -993,6 +1124,10 @@ img {
   padding: 90px 0 10px;
 }
 
+.contacts-main {
+  display: none;
+}
+
 .contacts__address {
   font-size: 16px;
   font-style: normal;
@@ -1070,6 +1205,12 @@ img {
   gap: 20px;
 }
 
+@media (min-width: 1250px) {
+  .contacts-main {
+    display: block;
+  }
+}
+
 
 /* page reviews  */
 
@@ -1077,58 +1218,6 @@ img {
   margin-top: 10px;
 }
 
-.reviews__subtitle {
-  margin: 50px 0 20px;
-}
-
-
-.reviews__form {
-  /* width: 252px; */
-  margin-bottom: 30px;
-}
-
-.reviews__label {
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
-
-.reviews__label:not(:last-of-type) {
-  margin-bottom: 10px;
-}
-
-.reviews__input {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-  color: #000000;
-  padding: 11px 15px;
-  border: none;
-  border: 1px solid #000000;
-  border-radius: 10px;
-}
-
-.reviews__input::placeholder {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-  color: #000000;
-}
-
-.reviews__textarea {
-  height: 180px;
-  padding: 15px;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 23px;
-}
 
 /* prices page  */
 
@@ -1315,14 +1404,22 @@ img {
   }
 
   .table-desktop {
-    display: block;
+    display: table;
   }
+
+  .prices__image {
+    display: none
+  }
+
+  /* .map__image {
+    display: ;
+  } */
   
   }
 
 @media (max-width: 1250px) {
   .table {
-    display: block;
+    display: table;
   }
 
   .prices__list {
@@ -1330,7 +1427,7 @@ img {
   }
 
   .table-desktop {
-    display: none;
+    display: table;
   }
   
   }
