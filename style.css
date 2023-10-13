@@ -1025,6 +1025,19 @@ img {
   margin-bottom: 30px;
 }
 
+@media (min-width: 1000px){
+  .footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__navigation{
+    order: 1;
+  }
+  .footer__requisites{
+    order: 3;
+  }
+}
+
 /* requisites */
 
 /* .requisites {} */
