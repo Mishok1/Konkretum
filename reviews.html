@@ -224,45 +224,49 @@
                             выравнивает тон, питает!</p>
                         <span class="review-card__data">30 грудня, 2023</span>
                     </li>
+                    <li class="reviews__item review-card">
+                        <h3 class="review-card__title">Партнер</h3>
+                        <div class="review-card__rating">
+                            <img class="review-card__image" width="20px" height="20px" src="images/star.svg"
+                                alt="Звезда.">
+                            <img class="review-card__image" width="20px" height="20px" src="images/star.svg"
+                                alt="Звезда.">
+                            <img class="review-card__image" width="20px" height="20px" src="images/star.svg"
+                                alt="Звезда.">
+                            <img class="review-card__image" width="20px" height="20px" src="images/star.svg"
+                                alt="Звезда.">
+                            <img class="review-card__image" width="20px" height="20px" src="images/star.svg"
+                                alt="Звезда.">
+                        </div>
+                        <p class="review-card__description">Заказала этот крем не так давно и очень приятно удивлен, он
+                            наилучшим предназначением (в зоне вокруг глаз),
+                            но и творит чудеса, если наносить
+                            на все лицо – уменьшает пост-акне,
+                            выравнивает тон, питает!</p>
+                        <span class="review-card__data">30 грудня, 2023</span>
+                    </li>
                 </ul>
                 <button class="reviews__button">Еще</button>
-                <h3 class="reviews__subtitle">Оставить отзыв</h3>
-                <form class="reviews__form" action="https://echo.htmlacademy.ru/" method="post">
-                    <label class="reviews__label">Имя
-                        <input class="reviews__input" type="text" name="first-name" placeholder="Олег">
-                    </label>
-                    <label class="reviews__label">Поставить оценку
-                        <!-- <input class="reviews__input" type="text" name="grade"> -->
-                    </label>
-                    <label class="reviews__label">Оставить отзыв
-                        <textarea class="reviews__textarea" name="review" rows="11">Введите комментарий</textarea>
-                    </label>
-
-                    <!-- Eto kusok koda dlya ispolsovaniya, potom udalit -->
-                    <!-- <fieldset class="selection__field selection-field">
-                        <legend class="selection-field__title title">Дополнительно</legend>
-                        <div class="selection-field__wrapper">
-                          <input class="selection-label__input checkbox checkbox--checked" id="sweetener" name="additionally"
-                            value="sweetener" type="checkbox" checked>
-                          <label class="selection-field__label selection-label" for="sweetener">сахарозаменитель</label>
-                        </div>
-                        <div class="selection-field__wrapper">
-                          <input class="selection-label__input checkbox" id="drinking-water" name="additionally"
-                            value="drinking-water" type="checkbox">
-                          <label class="selection-field__label selection-label" for="drinking-water">питьевая вода</label>
-                        </div>
-                        <div class="selection-field__wrapper">
-                          <label class="selection-field__label selection-label" for="milk">
-                            <input class="selection-label__input checkbox" id="milk" name="additionally" value="milk"
-                              type="checkbox">молоко</label>
-                        </div>
-                        
-                      </fieldset> -->
-
-
-
-                </form>
-                <img class="reviews__image" src="images/car-strela.jpg" width="375" height="440" alt="Стрела.">
+                <section class="reviews__review-form review-form">
+                    <h3 class="review-form__subtitle">Оставить отзыв</h3>
+                    <form class="review-form__form" action="https://echo.htmlacademy.ru/" method="post">
+                        <label class="review-form__label">Имя
+                            <input class="review-form__input" type="text" name="first-name" placeholder="Олег">
+                        </label>
+                        <label class="review-form__label">Поставить оценку
+                            <input class="review-form__input" type="checkbox" name="grade" value="1 star">
+                            <input class="review-form__input" type="checkbox" name="grade" value="2 star">
+                            <input class="review-form__input" type="checkbox" name="grade" value="3 star">
+                            <input class="review-form__input" type="checkbox" name="grade" value="4 star">
+                            <input class="review-form__input" type="checkbox" name="grade" value="5 star">
+                        </label>
+                        <label class="review-form__label">Оставить отзыв
+                            <textarea class="review-form__textarea" name="review"
+                                rows="11">Введите комментарий</textarea>
+                        </label>
+                    </form>
+                    <img class="reviews__image" src="images/car-strela.jpg" width="375" height="439" alt="Стрела.">
+                </section>
             </div>
         </section>
         <section class="feedback">
@@ -285,7 +289,9 @@
         <section class="map">
             <div class="map__wrapper wrapper">
                 <h2 class="visually-hidden">Карта</h2>
-                <img class="map__image" src="images/map.jpg" width="375px" height="350px" alt="Карта.">
+                <img class="map__image map__image--mobile" src="images/map.jpg" width="375px" height="350px" alt="Карта.">
+                <img class="map__image map__image--desktop" src="images/map--desktop.jpg" width="1600" height="350px" alt="Карта.">
+                <a class="map__link" href="#"></a>
             </div>
         </section>
         <footer class="footer">
