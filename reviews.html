@@ -116,7 +116,7 @@
             </div>
         </section>
         <section class="main-reviews reviews">
-            <div class="about__wrapper wrapper">
+            <div class="reviews__wrapper wrapper">
                 <h2 class="reviews__title">Отзывы</h2>
                 <ul class="reviews__list">
                     <li class="reviews__item review-card">
@@ -247,28 +247,45 @@
                     </li>
                 </ul>
                 <button class="reviews__button">Еще</button>
+
+                <!--   -->
                 <section class="reviews__review-form review-form">
-                    <h3 class="review-form__subtitle">Оставить отзыв</h3>
-                    <form class="review-form__form" action="https://echo.htmlacademy.ru/" method="post">
-                        <label class="review-form__label">Имя
-                            <input class="review-form__input" type="text" name="first-name" placeholder="Олег">
-                        </label>
-                        <label class="review-form__label">Поставить оценку
-                            <input class="review-form__input" type="checkbox" name="grade" value="1 star">
-                            <input class="review-form__input" type="checkbox" name="grade" value="2 star">
-                            <input class="review-form__input" type="checkbox" name="grade" value="3 star">
-                            <input class="review-form__input" type="checkbox" name="grade" value="4 star">
-                            <input class="review-form__input" type="checkbox" name="grade" value="5 star">
-                        </label>
-                        <label class="review-form__label">Оставить отзыв
-                            <textarea class="review-form__textarea" name="review"
-                                rows="11">Введите комментарий</textarea>
-                        </label>
-                    </form>
-                    <img class="reviews__image" src="images/car-strela.jpg" width="375" height="439" alt="Стрела.">
+                    <div class="review-form__wrapper">
+                        <h3 class="review-form__subtitle">Оставить отзыв</h3>
+                        <form class="review-form__form" action="https://echo.htmlacademy.ru/" method="post">
+                            <label class="review-form__label">
+                                Имя
+                                <input class="review-form__input" type="text" name="first-name" placeholder="Олег">
+                            </label>
+                            <label class="review-form__label">
+                                Поставить оценку
+                                <div class="review-form__label__checkbox-wrapper">
+                                    <input class="review-form__input-checkbox" type="radio" name="grade" value="2 star">
+                                    <input class="review-form__input-checkbox" type="radio" name="grade" value="3 star">
+                                    <input class="review-form__input-checkbox" type="radio" name="grade" value="1 star">
+                                    <input class="review-form__input-checkbox" type="radio" name="grade" value="4 star">
+                                    <input class="review-form__input-checkbox" type="radio" name="grade" value="5 star">
+                                </div>
+                            </label>
+                            <label class="review-form__label">
+                                Оставить отзыв
+                                <textarea class="review-form__textarea" name="review"
+                                rows="11" placeholder="Введите комментарий"></textarea>
+                            </label>
+                            <button class="reviews__button reviews-form__button">Оставить отзыв</button>
+                        </form>
+                    </div>
+                    <div class="review-form__img-container">
+                        <img class="reviews__image" src="images/car-strela.jpg" width="375" height="439" alt="Стрела.">
+                    </div>
                 </section>
+                <!--  -->
+                
             </div>
         </section>
+        <div class="review-form__img-container-mobile">
+            <img class="reviews__image-mobile" src="images/car-strela.jpg" width="375" height="439" alt="Стрела.">
+        </div>
         <section class="feedback">
             <div class="feedback__wrapper wrapper">
                 <h2 class="feedback__title">Связаться с нами</h2>
