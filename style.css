@@ -88,7 +88,7 @@ img {
   font-weight: 400;
   line-height: 16px;
   color: #FFFFFF;
-  padding: 12px 0 15px;
+  padding: 4px 0;
   backdrop-filter: blur(10px);
 }
 
@@ -100,8 +100,22 @@ img {
   position: relative;
 }
 
+.header__container {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .header__logo {
   margin-bottom: 8px;
+}
+
+.header__logo-link {
+  text-decoration: none;
+}
+
+.header__slogan {
+  margin-bottom: 5px;
 }
 
 .header__list {
@@ -185,6 +199,12 @@ img {
     width: 400%;
     max-width: none;
     /* border-radius: 10px; */
+  }
+}
+
+@media (max-width: 1250px) {
+  .header__description {
+    display: none;
   }
 }
 
@@ -332,7 +352,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 773px;
-  margin-top: -97px;
+  margin-top: -93px;
 }
 
 .hero__address {
@@ -712,6 +732,8 @@ img {
   border-radius: 5px;
   color: #FFFFFF;
   align-self: flex-start;
+  text-decoration: none;
+  text-align: center;
 }
 
 @media (max-width:1000px){
@@ -784,6 +806,9 @@ img {
   box-shadow: 0px 4px 9px 1px #00000026;
   border-radius: 5px;
   color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  align-self: flex-start;
 }
 
 /* forms */
@@ -1462,17 +1487,6 @@ img {
 
 .prices__table {
   margin-bottom: 30px;
-  position: relative;
-}
-
-.table-desktop:first-child:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 215px;
-  height: 574px;
-  top: 0;
-  background-color: red;
 }
 
 .table {
@@ -1574,6 +1588,18 @@ img {
   font-weight: 600;
   line-height: 33px;
   margin-bottom: 50px;
+  position: relative;
+}
+
+.table-desktop:first-child:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 215px;
+  height: 574px;
+  top: 0;
+  left: 0;
+  background-color: red;
 }
 
 .table-desktop__head {
