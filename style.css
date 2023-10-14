@@ -1389,6 +1389,17 @@ img {
 
 .prices__table {
   margin-bottom: 30px;
+  position: relative;
+}
+
+.table-desktop:first-child:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 215px;
+  height: 574px;
+  top: 0;
+  background-color: red;
 }
 
 .table {
@@ -1489,6 +1500,7 @@ img {
   font-size: 24px;
   font-weight: 600;
   line-height: 33px;
+  margin-bottom: 50px;
 }
 
 .table-desktop__head {
@@ -1541,6 +1553,14 @@ img {
 
 .border-top {
   border-top: 1px solid #2B2B2B;
+}
+
+.border-radius-up-fix {
+  border-radius: 10px 0 0 0;  
+}
+
+.border-radius-down-fix {
+  border-radius: 0 0 0 10px;  
 }
 
 .text-align-right {
@@ -1597,7 +1617,7 @@ img {
   }
 
   .table-desktop {
-    display: table;
+    display: none;
   }
 
 }
