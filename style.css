@@ -1,8 +1,10 @@
+/* Theme Name: beton */
+
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("assets/fonts/OpenSans-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +12,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("assets/fonts/OpenSans-SemiBold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +20,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("assets/fonts/OpenSans-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,7 +28,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Poppins-Regular.woff2") format("woff2");
+  src: url("assets/fonts/Poppins-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -326,7 +328,7 @@ img {
   display: block;
   width: 6px;
   height: 16px;
-  background: url("images/right-row.svg") no-repeat center;
+  background: url("assets/images/right-row.svg") no-repeat center;
   background-size: 100%;
 }
 
@@ -341,6 +343,8 @@ img {
   font-weight: 400;
   line-height: 19px;
   cursor: pointer;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .navigation-services__link:hover,
@@ -356,7 +360,7 @@ img {
 .hero {
   padding: 114px 0 23px;
   background-color: #535353;
-  background-image: url(/images/hero.png);
+  background-image: url(assets/images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 773px;
@@ -454,7 +458,7 @@ img {
   width: 25px;
   height: 25px;
   display: block;
-  background: url("images/address-phone.svg") no-repeat center;
+  background: url("assets/images/address-phone.svg") no-repeat center;
 }
 
 .address__area {
@@ -468,7 +472,8 @@ img {
   width: 25px;
   height: 25px;
   display: block;
-  background: url("images/address-phone.svg") no-repeat center;
+  /* background: url("assets/images/address-phone.svg") no-repeat center; */
+  background: url("assets/images/icons/map-white.svg") no-repeat center;
 }
 
 .address__time {
@@ -482,7 +487,7 @@ img {
   width: 25px;
   height: 25px;
   display: block;
-  background: url("images/address-phone.svg") no-repeat center;
+  background: url("assets/images/icons/watch-white.svg") no-repeat center;
 }
 
 .address__list {
@@ -589,7 +594,7 @@ img {
 .feedback__bg__decor {
   width: 100%;
   height: 100%;
-  background: url(/images/dark-frame.svg) no-repeat;
+  background: url(assets/images/dark-frame.svg) no-repeat;
   background-position: 20px 0;
 }
 
@@ -680,6 +685,11 @@ img {
   color: #FFFFFF;
 }
 
+.wpcf7-not-valid-tip {
+  margin-top: 10px;
+}
+
+
 /* advantages */
 
 .advantages {
@@ -698,7 +708,7 @@ img {
 .about {
   padding: 50px 0;
   background-color: #535353;
-  background-image: url(/images/about.png);
+  background-image: url(assets/images/about.png);
   color: #FFFFFF;
 }
 
@@ -716,14 +726,14 @@ img {
   line-height: 44px;
 }
 
-.about__description {
+.about .about_wrapper p {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
   width: 100%;
 }
 
-.about__description:not(:last-of-type) {
+.about .about_wrapper p:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
@@ -1061,7 +1071,7 @@ img {
   display: block;
   width: 60px;
   height: 60px;
-  top: 50%;
+  bottom: 30px;
   right: 15%;
   background-color: #2B2B2B;
   border-radius: 50%;
@@ -1076,7 +1086,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("images/arrow-up.svg") no-repeat center;
+  background: url("assets/images/arrow-up.svg") no-repeat center;
   background-size: auto;
 }
 
@@ -1086,7 +1096,7 @@ img {
   object-fit: cover;
 }
 
-.image-big {
+.image-section__image{
   height: 500px;
   width: 100%;
   object-fit: cover;
@@ -1171,7 +1181,7 @@ img {
 .footer__bg__decor {
   width: 100%;
   height: 100%;
-  background-image: url(/images/Frame.svg);
+  background-image: url(assets/images/Frame.svg);
   background-position: -50px -50px;
 }
 
@@ -1232,7 +1242,7 @@ img {
   display: block;
   width: 8px;
   height: 18px;
-  background: url("images/right-row.svg") no-repeat center;
+  background: url("assets/images/right-row.svg") no-repeat center;
   background-size: 100%;
   transform: rotate(90deg);
 }
@@ -1386,7 +1396,7 @@ img {
   width: 35px;
   height: 35px;
   display: block;
-  background: url("images/address-phone-white.svg") no-repeat center;
+  background: url("assets/images/address-phone-white.svg") no-repeat center;
 }
 
 .contacts__area {
@@ -1400,7 +1410,7 @@ img {
   width: 35px;
   height: 35px;
   display: block;
-  background: url("images/address-phone-white.svg") no-repeat center;
+  background: url("assets/images/icons/map-dark.svg") no-repeat center;
 }
 
 .contacts__time {
@@ -1414,7 +1424,7 @@ img {
   width: 35px;
   height: 35px;
   display: block;
-  background: url("images/address-phone-white.svg") no-repeat center;
+  background: url("assets/images/icons/watch-dark.svg") no-repeat center;
 }
 
 .contacts__slogan {
